@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-public struct ButtonPrimary: View {    
-    let label: String
+public struct ButtonPrimary: View {
+    let label: LocalizedStringKey
     let icon: String?
     let action: () -> Void
     
-    public init(label: String, icon: String?, action: @escaping () -> Void) {
+    public init(label: LocalizedStringKey = "", icon: String?, action: @escaping () -> Void) {
         self.label = label
         self.icon = icon
         self.action = action
@@ -25,9 +25,7 @@ public struct ButtonPrimary: View {
                     .font(.system(size: 16, weight: .medium))
                     .padding(.trailing, 8)
             }
-            if label != "" {
-                Text(label)
-            }
+            Text(label, bundle: .module)
         }
             .padding(.horizontal, 16)
             .padding(.vertical, 8)
