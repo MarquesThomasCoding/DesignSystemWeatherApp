@@ -44,11 +44,7 @@ public enum Images {
         case "sunny":
             return sun
         case "partly cloudy":
-//            if isDay == 0 {
-//                return nightPartlyCloudy
-//            } else {
-                return partlyCloudy
-//            }
+            return partlyCloudy
         case "cloudy":
             return cloud
         case "overcast", "mist", "fog":
