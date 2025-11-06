@@ -8,18 +8,6 @@
 import SwiftUI
 
 public enum Images {
-    public static let backgroundWeather = ImageResource(name: "BackgroundWeather", bundle: .module)
-    public static let backgroundAube = ImageResource(name: "BackgroundAube", bundle: .module)
-    public static let backgroundDay = ImageResource(name: "BackgroundDay", bundle: .module)
-    public static let backgroundCrepuscule = ImageResource(name: "BackgroundCrepuscule", bundle: .module)
-    public static let backgroundNight = ImageResource(name: "BackgroundNight", bundle: .module)
-    public static let backgroundMidnight = ImageResource(name: "BackgroundMidnight", bundle: .module)
-    public static let backgroundLeverDeSoleil = ImageResource(name: "BackgroundLeverDeSoleil", bundle: .module)
-    public static let fullMoon = ImageResource(name: "FullMoon", bundle: .module)
-    public static let newMoon = ImageResource(name: "NewMoon", bundle: .module)
-    public static let waxingCrescent = ImageResource(name: "WaxingCrescent", bundle: .module)
-    public static let waxingGibbous = ImageResource(name: "WaxingGibbous", bundle: .module)
-    public static let waningGibbous = ImageResource(name: "WaningGibbous", bundle: .module)
     public static let firstQuarter = ImageResource(name: "FirstQuarter", bundle: .module)
     public static let sunrise = ImageResource(name: "Sunrise", bundle: .module)
     public static let sunset = ImageResource(name: "Sunset", bundle: .module)
