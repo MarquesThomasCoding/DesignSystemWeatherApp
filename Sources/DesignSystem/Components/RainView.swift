@@ -7,11 +7,13 @@
 
 import SwiftUI
 
-struct RainView: View {
+public struct RainView: View {
     @State private var raindrops: [Raindrop] = []
     @State private var timer = Timer.publish(every: 0.016, on: .main, in: .common).autoconnect()
+    
+    public init() {}
 
-    var body: some View {
+    public var body: some View {
         Canvas { context, size in
             for drop in raindrops {
                 var path = Path()
