@@ -21,9 +21,9 @@ public struct Card<Content: View>: View {
             content
         }
         .padding(16)
-        .background(Color.white.opacity(0.15))
+        .background(.ultraThinMaterial.opacity(0.7))
+        .foregroundColor(.black.opacity(0.7))
         .cornerRadius(16)
-        .foregroundColor(.white)
     }
 }
 
