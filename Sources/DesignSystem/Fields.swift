@@ -8,19 +8,23 @@
 import SwiftUI
 
 public struct SearchField: View {
-    public init() {
+    private let placeholder: String
+    @Binding private var text: String
+
+    public init(_ placeholder: String, text: Binding<String>) {
+        self.placeholder = placeholder
+        self._text = text
     }
-    
+
     public var body: some View {
-        TextField("field.search.placeholder", text: .constant(""))
+        TextField(placeholder, text: $text)
             .padding(.horizontal, 16)
             .padding(.vertical, 8)
             .background(Color.white.opacity(0.15))
-            .foregroundColor(.white)
             .cornerRadius(8)
             .overlay(
                 RoundedRectangle(cornerRadius: 8)
-                    .stroke(.white.opacity(0.5), lineWidth: 1)
+                    .stroke(Color.white.opacity(0.5), lineWidth: 1)
             )
     }
 }
