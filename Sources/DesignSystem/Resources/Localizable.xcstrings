@@ -53,23 +53,6 @@
         }
       }
     },
-    "field.search.placeholder" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Search"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Rechercher"
-          }
-        }
-      }
-    },
     "home.gotocity" : {
       "extractionState" : "manual",
       "localizations" : {
